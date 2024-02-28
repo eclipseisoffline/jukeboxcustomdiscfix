@@ -3,9 +3,20 @@
   "id": "jukeboxcustomdiscfix",
   "version": "${version}",
   "name": "Jukebox Custom Disc Fix",
-  "description": "",
-  "authors": [],
-  "contact": {},
+  "description": "This mod fixes bug MC-260346, which causes custom music discs, when played in a jukebox, to be cut off when the vanilla disc would normally end.",
+  "authors": [
+    {
+      "name": "eclipseisoffline",
+      "contact": {
+        "homepage": "https://github.com/eclipseisoffline"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://github.com/eclipseisoffline/jukeboxcustomdiscfix",
+    "issues": "https://github.com/eclipseisoffline/jukeboxcustomdiscfix/issues",
+    "sources": "https://github.com/eclipseisoffline/jukeboxcustomdiscfix"
+  },
   "license": "GPLv3",
   "icon": "assets/jukeboxcustomdiscfix/icon.png",
   "environment": "*",
