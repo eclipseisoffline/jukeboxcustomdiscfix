@@ -17,5 +17,7 @@ This mod is licensed under GNU GPLv3.
 
 ## Usage
 
+Mod builds can be found [here]()https://github.com/eclipseisoffline/jukeboxcustomdiscfix/packages/2082474.
+
 This mod is currently available for Minecraft 1.20.4 (Fabric modloader 0.15.7 or higher).
 The Fabric API is not required. This mod is not required on clients.
