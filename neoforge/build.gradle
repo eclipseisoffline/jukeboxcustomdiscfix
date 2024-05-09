@@ -51,7 +51,7 @@ tasks.withType(ProcessResources).configureEach {
     inputs.property "neoforge_supported_versions", project.neoforge_supported_versions
     inputs.property "neoforge_loader_version", project.neoforge_loader_version
 
-    filesMatching("META-INF/neoforge.mods.toml") {
+    filesMatching("META-INF/mods.toml") {
         expand "version": project.version,
                 "neoforge_supported_versions": project.neoforge_supported_versions,
                 "neoforge_loader_version": project.neoforge_loader_version
