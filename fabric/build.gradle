@@ -9,7 +9,7 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-    archivesName = project.archives_base_name
+    archivesName = project.fabric_archives_base_name
 }
 
 repositories {
@@ -19,6 +19,11 @@ repositories {
     }
 }
 
+sourceSets.main {
+    java.srcDir project(":common").sourceSets.main.java
+    resources.srcDir project(":common").sourceSets.main.resources
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.layered() {
@@ -26,19 +31,29 @@ dependencies {
         parchment("org.parchmentmc.data:${project.parchment_mappings}")
     }
 
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
 }
 
 processResources {
     inputs.property "version", project.version
-    inputs.property "minecraft_version", project.minecraft_version
-    inputs.property "loader_version", project.loader_version
+    inputs.property "supported_versions", project.supported_versions
+    inputs.property "neoforge_supported_versions", project.neoforge_supported_versions
+    inputs.property "fabric_loader_version", project.fabric_loader_version
+    inputs.property "quilt_loader_version", project.quilt_loader_version
+    inputs.property "neoforge_loader_version", project.neoforge_loader_version
     filteringCharset "UTF-8"
 
+    // todo FIX
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
-                "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+                "supported_versions": project.supported_versions,
+                "fabric_loader_version": project.fabric_loader_version
+    }
+    filesMatching("quilt.mod.json") {
+        expand "version": project.version,
+                "group": project.group,
+                "supported_versions": project.supported_versions,
+                "quilt_loader_version": project.quilt_loader_version
     }
 }
 
@@ -71,14 +86,14 @@ publishing {
             url = uri("https://maven.pkg.github.com/eclipseisoffline/jukeboxcustomdiscfix")
             credentials {
                 username = "eclipseisoffline"
-                password = Files.readString(java.nio.file.Path.of("./github_auth"))
+                password = Files.readString(java.nio.file.Path.of(project.rootDir.path + "/github_auth"))
             }
         }
     }
 
     publications {
         gpr(MavenPublication) {
-            artifactId project.archives_base_name
+            artifactId project.archivesBaseName
 
             from components.java
         }
