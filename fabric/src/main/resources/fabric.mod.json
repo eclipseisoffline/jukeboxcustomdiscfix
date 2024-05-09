@@ -28,7 +28,7 @@
     "jukeboxcustomdiscfix.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": ">=${fabric_loader_version}",
     "minecraft": "${supported_versions}"
   }
 }
