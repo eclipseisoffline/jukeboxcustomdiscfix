@@ -37,13 +37,10 @@ dependencies {
 processResources {
     inputs.property "version", project.version
     inputs.property "supported_versions", project.supported_versions
-    inputs.property "neoforge_supported_versions", project.neoforge_supported_versions
     inputs.property "fabric_loader_version", project.fabric_loader_version
     inputs.property "quilt_loader_version", project.quilt_loader_version
-    inputs.property "neoforge_loader_version", project.neoforge_loader_version
     filteringCharset "UTF-8"
 
-    // todo FIX
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
                 "supported_versions": project.supported_versions,
