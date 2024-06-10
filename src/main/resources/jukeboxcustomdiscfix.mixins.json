@@ -6,7 +6,11 @@
   "mixins": [
     "JukeboxSongPlayerMixin"
   ],
-  "client": [],
+  "client": [
+    "ClientLevelMixin",
+    "LevelRenderAccessor",
+    "LevelRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
