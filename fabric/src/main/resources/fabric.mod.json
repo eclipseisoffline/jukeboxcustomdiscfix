@@ -30,14 +30,5 @@
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
     "minecraft": "${supported_versions}"
-  },
-  "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.donate": "https://ko-fi.com/eclipseisoffline",
-        "modmenu.kofi": "https://ko-fi.com/eclipseisoffline",
-        "modmenu.modrinth": "https://modrinth.com/mod/eclipses-tweakeroo-additions"
-      }
-    }
   }
 }
