@@ -4,9 +4,13 @@
   "package": "xyz.eclipseisoffline.jukeboxcustomdiscfix.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "JukeboxBlockEntityMixin"
+    "JukeboxSongPlayerMixin"
   ],
-  "client": [],
+  "client": [
+    "ClientLevelMixin",
+    "LevelRenderAccessor",
+    "LevelRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

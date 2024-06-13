@@ -3,7 +3,7 @@
   "id": "jukeboxcustomdiscfix",
   "version": "${version}",
   "name": "Jukebox Custom Disc Fix",
-  "description": "This mod fixes bug MC-260346, which causes custom music discs, when played in a jukebox, to be cut off when the vanilla disc would normally end.",
+  "description": "This mod fixes bug MC-260346 for discs modified using a resource pack, which causes custom music discs, when played in a jukebox, to be cut off when the vanilla disc would normally end.",
   "authors": [
     {
       "name": "eclipseisoffline",
@@ -30,5 +30,14 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "minecraft": "${supported_versions}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.donate": "https://ko-fi.com/eclipseisoffline",
+        "modmenu.kofi": "https://ko-fi.com/eclipseisoffline",
+        "modmenu.modrinth": "https://modrinth.com/mod/eclipses-tweakeroo-additions"
+      }
+    }
   }
 }
