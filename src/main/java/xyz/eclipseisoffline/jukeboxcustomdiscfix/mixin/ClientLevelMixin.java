@@ -1,8 +1,10 @@
 package xyz.eclipseisoffline.jukeboxcustomdiscfix.mixin;
 
+import java.util.Map;
 import java.util.function.Supplier;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.LevelRenderer;
+import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.RegistryAccess;
@@ -36,9 +38,11 @@ public abstract class ClientLevelMixin extends Level {
 
     @Inject(method = "setServerVerifiedBlockState", at = @At("TAIL"))
     public void checkForJukeboxStateAndStopSong(BlockPos pos, BlockState state, int flags, CallbackInfo callbackInfo) {
-        if (state.getBlock() == Blocks.JUKEBOX
-                && !state.getValue(JukeboxBlock.HAS_RECORD) && ((LevelRenderAccessor) levelRenderer).getPlayingJukeboxSongs().containsKey(pos)) {
-            levelRenderer.stopJukeboxSongAndNotifyNearby(pos);
+        Map<BlockPos, SoundInstance> playingJukeboxSongs = ((LevelRenderAccessor) levelRenderer).getPlayingJukeboxSongs();
+        if (playingJukeboxSongs.containsKey(pos)) {
+            if (state.getBlock() != Blocks.JUKEBOX || !state.getValue(JukeboxBlock.HAS_RECORD)) {
+                levelRenderer.stopJukeboxSongAndNotifyNearby(pos);
+            }
         }
     }
 }
