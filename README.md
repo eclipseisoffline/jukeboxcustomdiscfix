@@ -35,12 +35,12 @@ Feel free to report any bugs, at the issue tracker.
 
 ## License
 
-This mod is licensed under GNU GPLv3.
+This mod is licensed under GNU LGPLv3.
 
 ## Usage
 
 Mod builds can be found [here](https://github.com/eclipseisoffline/jukeboxcustomdiscfix/packages/2082474)
 and on [Modrinth](https://modrinth.com/mod/jukebox-custom-disc-fix).
 
-This mod is currently available for Minecraft 1.21, 1.20.5+6, 1.20.4 and 1.20.1 (Fabric modloader).
+This mod is currently available for Minecraft 1.21+1, 1.20.5+6, 1.20.4 and 1.20.1 (Fabric modloader).
 The Fabric API is not required. This mod is not required on clients when playing multiplayer.
