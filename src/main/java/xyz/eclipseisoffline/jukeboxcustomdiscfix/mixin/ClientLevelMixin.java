@@ -3,6 +3,7 @@ package xyz.eclipseisoffline.jukeboxcustomdiscfix.mixin;
 import java.util.Map;
 import java.util.function.Supplier;
 import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.renderer.LevelEventHandler;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.core.BlockPos;
@@ -28,20 +29,18 @@ public abstract class ClientLevelMixin extends Level {
 
     @Shadow
     @Final
-    private LevelRenderer levelRenderer;
+    private LevelEventHandler levelEventHandler;
 
-    protected ClientLevelMixin(WritableLevelData levelData, ResourceKey<Level> dimension, RegistryAccess registryAccess,
-            Holder<DimensionType> dimensionTypeRegistration, Supplier<ProfilerFiller> profiler,
-            boolean isClientSide, boolean isDebug, long biomeZoomSeed, int maxChainedNeighborUpdates) {
-        super(levelData, dimension, registryAccess, dimensionTypeRegistration, profiler, isClientSide, isDebug, biomeZoomSeed, maxChainedNeighborUpdates);
+    protected ClientLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, long l, int i) {
+        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, l, i);
     }
 
     @Inject(method = "setServerVerifiedBlockState", at = @At("TAIL"))
     public void checkForJukeboxStateAndStopSong(BlockPos pos, BlockState state, int flags, CallbackInfo callbackInfo) {
-        Map<BlockPos, SoundInstance> playingJukeboxSongs = ((LevelRenderAccessor) levelRenderer).getPlayingJukeboxSongs();
+        Map<BlockPos, SoundInstance> playingJukeboxSongs = ((LevelEventHandlerAccessor) levelEventHandler).getPlayingJukeboxSongs();
         if (playingJukeboxSongs.containsKey(pos)) {
             if (state.getBlock() != Blocks.JUKEBOX || !state.getValue(JukeboxBlock.HAS_RECORD)) {
-                levelRenderer.stopJukeboxSongAndNotifyNearby(pos);
+                ((LevelEventHandlerAccessor) levelEventHandler).invokeStopJukeboxSongAndNotifyNearby(pos);
             }
         }
     }

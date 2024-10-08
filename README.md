@@ -42,6 +42,6 @@ This mod is licensed under GNU LGPLv3.
 Mod builds can be found [here](https://github.com/eclipseisoffline/jukeboxcustomdiscfix/packages/2082474)
 and on [Modrinth](https://modrinth.com/mod/jukebox-custom-disc-fix).
 
-This mod is currently available for Fabric (but Quilt may also work as well) Minecraft 1.21+1,
+This mod is currently available for Fabric (but Quilt may also work as well) Minecraft 1.21.2, 1.21+1,
 and Fabric/Quilt/Forge/Neoforge 1.20.5+6, 1.20.4 and 1.20.1.
 The Fabric API is not required. This mod is not required on clients when playing multiplayer.

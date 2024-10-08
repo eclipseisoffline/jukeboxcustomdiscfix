@@ -8,8 +8,8 @@
   ],
   "client": [
     "ClientLevelMixin",
-    "LevelRenderAccessor",
-    "LevelRendererMixin"
+    "LevelEventHandlerAccessor",
+    "LevelEventHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
