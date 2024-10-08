@@ -1,9 +1,7 @@
 package xyz.eclipseisoffline.jukeboxcustomdiscfix.mixin;
 
 import net.minecraft.client.renderer.LevelEventHandler;
-import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.packs.resources.ResourceManagerReloadListener;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
