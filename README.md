@@ -50,14 +50,14 @@ For support and/or any questions you may have, feel free to join [my discord](ht
 
 ## Version support
 
-| Minecraft Version | Fabric                        | Quilt                         | NeoForge                           | Forge                              |
-|-------------------|-------------------------------|-------------------------------|------------------------------------|------------------------------------|
-| 1.21.4            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                      | ❌ Unavailable                      |
-| 1.21.2+3          | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                      | ❌ Unavailable                      |
-| 1.21+1            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                      | ❌ Unavailable                      |
-| 1.20.5+6          | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔ Available, won't receive support | ❌ Unavailable                      |
-| 1.20.4            | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔ Available, won't receive support | ❌ Unavailable                      |
-| 1.20.1            | ✅ Current, no client side fix | ✔️ Use Fabric version         | ✔ Available, won't receive support | ✔ Available, won't receive support |
+| Minecraft Version | Fabric                        | Quilt                         | NeoForge                            | Forge                               |
+|-------------------|-------------------------------|-------------------------------|-------------------------------------|-------------------------------------|
+| 1.21.4            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
+| 1.21.2+3          | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
+| 1.21+1            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
+| 1.20.5+6          | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔️ Available, won't receive support | ❌ Unavailable                       |
+| 1.20.4            | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔️ Available, won't receive support | ❌ Unavailable                       |
+| 1.20.1            | ✅ Current, no client side fix | ✔️ Use Fabric version         | ✔️ Available, won't receive support | ✔️ Available, won't receive support |
 
 I try to keep support up for the latest major and latest minor release of Minecraft. Updates to newer Minecraft
 versions may be delayed from time to time, as I do not always have the time to immediately update my mods.
