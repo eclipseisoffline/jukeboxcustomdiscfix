@@ -57,6 +57,7 @@ For support and/or any questions you may have, feel free to join [my discord](ht
 | 1.21+1            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.20.5+6          | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔️ Available, won't receive support | ❌ Unavailable                       |
 | 1.20.4            | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔️ Available, won't receive support | ❌ Unavailable                       |
+| 1.20.2            | ✅ Current, no client side fix | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.20.1            | ✅ Current, no client side fix | ✔️ Use Fabric version         | ✔️ Available, won't receive support | ✔️ Available, won't receive support |
 
 I try to keep support up for the latest major and latest minor release of Minecraft. Updates to newer Minecraft
