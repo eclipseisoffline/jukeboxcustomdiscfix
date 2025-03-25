@@ -52,6 +52,7 @@ For support and/or any questions you may have, feel free to join [my discord](ht
 
 | Minecraft Version | Fabric                        | Quilt                         | NeoForge                            | Forge                               |
 |-------------------|-------------------------------|-------------------------------|-------------------------------------|-------------------------------------|
+| 1.21.5            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.21.4            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.21.2+3          | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.21+1            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
@@ -70,6 +71,6 @@ it wouldn't be worth the effort anymore for 1.21.x versions and above.
 
 ## Usage
 
-Mod builds can be found [here](https://github.com/eclipseisoffline/jukeboxcustomdiscfix/packages/2082474) and on [Modrinth](https://modrinth.com/mod/jukebox-custom-disc-fix).
+Mod builds can be found on the releases page, as well as on [Modrinth](https://modrinth.com/mod/jukebox-custom-disc-fix).
 
 The Fabric API is not required. This mod is not required on clients when playing multiplayer and the mod is installed server-side.
