@@ -52,7 +52,7 @@ For support and/or any questions you may have, feel free to join [my discord](ht
 
 | Minecraft Version | Fabric                        | Quilt                         | NeoForge                            | Forge                               |
 |-------------------|-------------------------------|-------------------------------|-------------------------------------|-------------------------------------|
-| 1.21.6+7          | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
+| 1.21.6+7+8        | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.21.5            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.21.4            | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
 | 1.21.2+3          | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
