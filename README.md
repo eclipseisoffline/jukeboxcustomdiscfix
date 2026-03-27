@@ -6,6 +6,8 @@
 [![Discord Badge](https://img.shields.io/badge/chat-discord-%235865f2)](https://discord.gg/CNNkyWRkqm)
 [![Github Badge](https://img.shields.io/badge/github-jukeboxcustomdiscfix-white?logo=github)](https://github.com/eclipseisoffline/jukeboxcustomdiscfix)
 ![GitHub License](https://img.shields.io/github/license/eclipseisoffline/jukeboxcustomdiscfix)
+![Available for Fabric](https://img.shields.io/badge/available_for-fabric-_?color=%23dbd0b4)
+![Available for NeoForge](https://img.shields.io/badge/available_for-NeoForge-_?color=%23e58c53)
 
 ## Minecraft 1.21 notice
 
@@ -50,25 +52,26 @@ For support and/or any questions you may have, feel free to join [my discord](ht
 
 ## Version support
 
-| Minecraft Version  | Fabric                        | Quilt                         | NeoForge                            | Forge                               |
-|--------------------|-------------------------------|-------------------------------|-------------------------------------|-------------------------------------|
-| 1.21.6+7+8+9+10+11 | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
-| 1.21.5             | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
-| 1.21.4             | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
-| 1.21.2+3           | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
-| 1.21+1             | ✅ Current                     | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
-| 1.20.5+6           | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔️ Available, won't receive support | ❌ Unavailable                       |
-| 1.20.4             | ✅ Current, no client side fix | ✅ Current, no client side fix | ✔️ Available, won't receive support | ❌ Unavailable                       |
-| 1.20.2             | ✅ Current, no client side fix | ✔️ Use Fabric version         | ❌ Unavailable                       | ❌ Unavailable                       |
-| 1.20.1             | ✅ Current, no client side fix | ✔️ Use Fabric version         | ✔️ Available, won't receive support | ✔️ Available, won't receive support |
+| Minecraft Version  | Fabric                                                   | Quilt                                                    | NeoForge                                                 | Forge                                                    |
+|--------------------|----------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|
+| 26.1               | ✅ Current                                                | ✔️ Use Fabric version                                    | ✅ Current                                                | ❌ Unavailable                                            |
+| 1.21.6+7+8+9+10+11 | ✔️ Available, won't receive support                      | ✔️ Use Fabric version                                    | ❌ Unavailable                                            | ❌ Unavailable                                            |
+| 1.21.5             | ✔️ Available, won't receive support                      | ✔️ Use Fabric version                                    | ❌ Unavailable                                            | ❌ Unavailable                                            |
+| 1.21.4             | ✔️ Available, won't receive support                      | ✔️ Use Fabric version                                    | ❌ Unavailable                                            | ❌ Unavailable                                            |
+| 1.21.2+3           | ✔️ Available, won't receive support                      | ✔️ Use Fabric version                                    | ❌ Unavailable                                            | ❌ Unavailable                                            |
+| 1.21+1             | ✔️ Available (no client side fix), won't receive support | ✔️ Use Fabric version                                    | ❌ Unavailable                                            | ❌ Unavailable                                            |
+| 1.20.5+6           | ✔️ Available (no client side fix), won't receive support | ✔️ Available (no client side fix), won't receive support | ✔️ Available (no client side fix), won't receive support | ❌ Unavailable                                            |
+| 1.20.4             | ✔️ Available (no client side fix), won't receive support | ✔️ Available (no client side fix), won't receive support | ✔️ Available (no client side fix), won't receive support | ❌ Unavailable                                            |
+| 1.20.2             | ✔️ Available (no client side fix), won't receive support | ✔️ Use Fabric version                                    | ❌ Unavailable                                            | ❌ Unavailable                                            |
+| 1.20.1             | ✔️ Available (no client side fix), won't receive support | ✔️ Use Fabric version                                    | ✔️ Available (no client side fix), won't receive support | ✔️ Available (no client side fix), won't receive support |
 
 I try to keep support up for the latest major and latest minor release of Minecraft. Updates to newer Minecraft
 versions may be delayed from time to time, as I do not always have the time to immediately update my mods.
 
 Unsupported mods are still available to download, but they won't receive new features or bugfixes.
 
-Ports for modloaders other than Fabric are available for 1.20.x versions, but supporting other modloaders is quite a hassle and I decided
-it wouldn't be worth the effort anymore for 1.21.x versions and above.
+Ports for modloaders other than Fabric are available for 1.20.x versions. For Minecraft 26.1 and above, this mod
+is available for both Fabric and NeoForge.
 
 ## Usage
 
