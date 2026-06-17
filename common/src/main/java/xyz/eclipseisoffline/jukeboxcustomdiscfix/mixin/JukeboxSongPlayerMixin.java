@@ -4,7 +4,7 @@ import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.JukeboxSongPlayer;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.BlockEntityTypes;
 import net.minecraft.world.level.block.entity.JukeboxBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Final;
@@ -29,7 +29,7 @@ public abstract class JukeboxSongPlayerMixin {
 
     @Redirect(method = "stop", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/LevelAccessor;levelEvent(ILnet/minecraft/core/BlockPos;I)V"))
     public void onlySendStopRecordEventIfJukeboxEmpty(LevelAccessor levelAccessor, int type, BlockPos pos, int data) {
-        Optional<JukeboxBlockEntity> jukeboxBlock = levelAccessor.getBlockEntity(pos, BlockEntityType.JUKEBOX);
+        Optional<JukeboxBlockEntity> jukeboxBlock = levelAccessor.getBlockEntity(pos, BlockEntityTypes.JUKEBOX);
         if (jukeboxBlock.isPresent() && !jukeboxBlock.orElseThrow().isEmpty()) {
             return;
         }
